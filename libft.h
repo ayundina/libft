@@ -61,9 +61,18 @@ int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
+<<<<<<< HEAD
 void				ft_putnbr(int n);
 void				ft_putchar(char c);
 void				ft_putstr(char const *s);
+=======
+void				ft_putnbr(long long n);
+void				ft_putchar(char c);
+/*
+** void				ft_putstr(unsigned char const *s);
+*/
+int					ft_putstr(unsigned char const *s);
+>>>>>>> refs/remotes/origin/master
 void				ft_putendl(char const *s);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
