@@ -12,23 +12,11 @@
 
 #include "libft.h"
 
-<<<<<<< HEAD
-void	ft_putnbr(int n)
-=======
 void	ft_putnbr(long long n)
->>>>>>> refs/remotes/origin/master
 {
 	if (n < 0)
 	{
 		write(1, "-", 1);
-<<<<<<< HEAD
-		if (n == -2147483648)
-		{
-			write(1, "2", 1);
-			n = -147483648;
-		}
-=======
->>>>>>> refs/remotes/origin/master
 		n = n * -1;
 	}
 	if (n >= 10)

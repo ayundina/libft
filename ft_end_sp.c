@@ -16,11 +16,7 @@ int	ft_end_sp(char const *str)
 {
 	int	len;
 
-<<<<<<< HEAD
-	len = ft_strlen(str);
-=======
 	len = (int)ft_strlen(str);
->>>>>>> refs/remotes/origin/master
 	while ((str[len - 1] == ' ' || str[len - 1] == '\n' || \
 		str[len - 1] == '\t') && len > 0)
 	{

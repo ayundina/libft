@@ -14,11 +14,7 @@
 
 void	ft_strdel(char **as)
 {
-<<<<<<< HEAD
-	if (as)
-=======
 	if (*as)
->>>>>>> refs/remotes/origin/master
 	{
 		free(*as);
 		*as = NULL;

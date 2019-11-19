@@ -23,11 +23,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (!s1 || !s2)
 		return (NULL);
-<<<<<<< HEAD
-	len = ft_strlen(s1) + ft_strlen(s2);
-=======
 	len = (int)ft_strlen(s1) + (int)ft_strlen(s2);
->>>>>>> refs/remotes/origin/master
 	concat_str = (char *)malloc(sizeof(char) * len + 1);
 	if (!concat_str)
 		return (NULL);

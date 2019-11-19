@@ -31,7 +31,7 @@ void	ft_getwords(char **ret, char const *s, char c, int words)
 			{
 				nw_len++;
 			}
-			ret[next_word] = (char *)malloc(sizeof(char) * nw_len);
+			ret[next_word] = (char *)malloc(sizeof(char) * (nw_len + 1));
 			ft_dupword(ret[next_word], s, c);
 			next_word++;
 			s += nw_len;

@@ -15,6 +15,12 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+
+/*
+**					libft functions
+*/
 
 size_t				ft_strlen(const char *s);
 char				*ft_strcpy(char *dst, const char *src);
@@ -61,18 +67,9 @@ int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
-<<<<<<< HEAD
-void				ft_putnbr(int n);
-void				ft_putchar(char c);
-void				ft_putstr(char const *s);
-=======
 void				ft_putnbr(long long n);
 void				ft_putchar(char c);
-/*
-** void				ft_putstr(unsigned char const *s);
-*/
-int					ft_putstr(unsigned char const *s);
->>>>>>> refs/remotes/origin/master
+void				ft_putstr(unsigned char const *s);
 void				ft_putendl(char const *s);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
@@ -100,5 +97,27 @@ void				ft_getwords(char **ret, char const *s, char c, int words);
 int					ft_countwords(char const *s, char c);
 int					ft_beg_sp(char const *str);
 int					ft_end_sp(char const *str);
+
+/*
+**					get_next_line
+*/
+
+# define BUFF_SIZE 50
+
+int					get_next_line(const int fd, char **line);
+
+typedef struct		s_l
+{
+	char			*tmp;
+	char			*s[1042];
+	int				nl[1042];
+}					t_l;
+
+/*
+**					ft_printf
+*/
+
+int					ft_printf(const char *format, ...);
+int					ft_dprintf(int fd, const char *format, ...);
 
 #endif

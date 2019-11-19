@@ -12,15 +12,11 @@
 
 #include "libft.h"
 
-<<<<<<< HEAD
-void	ft_putstr(char const *s)
-=======
 /*
 ** cahnged
 */
 
-int		ft_putstr(unsigned char const *s)
->>>>>>> refs/remotes/origin/master
+void	ft_putstr(unsigned char const *s)
 {
 	int	i;
 
@@ -33,8 +29,4 @@ int		ft_putstr(unsigned char const *s)
 			i++;
 		}
 	}
-<<<<<<< HEAD
-=======
-	return (i);
->>>>>>> refs/remotes/origin/master
 }
